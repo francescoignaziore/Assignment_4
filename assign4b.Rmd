@@ -24,11 +24,15 @@ who5 <- who4 %>%
 
 ```
 
+(I am exchange student, my written English may result not correct at times)
+
 ## 1
 In this case study I set na.rm = TRUE just to make it easier to check that we had the correct values. Is this reasonable? Think about how missing values are represented in this dataset. Are there implicit missing values? What’s the difference between an NA and zero?
 
-Yes, it is reasonable as the missing values we removed were referring to the lack of data regarding tubercolosis cases in a given country on a given year. For this reason, the rows with the missing values were redundant as they were not giving any useful information. These missing values may have been inserted explicitily in order to avoid having implicit missing values (with the NA values inserted, every country presents an observation in every year of the study (from 1980 to 2013)).
+Yes, it is reasonable as the missing values we removed were referring to the lack of data regarding tubercolosis cases in a given country in a given year. For this reason, the rows with the missing values were redundant as they were not giving any useful information. These missing values may have been inserted explicitily by whoever created the dataset in order to avoid having implicit missing values (with the NA values inserted, every country presents an observation in every year of the study (from 1980 to 2013)).
 However,because these explicitily missing values are considered not important, we can turn them implicit.The main difference between NA and 0 is that 0 is an actual value saying that there were no cases of tubercolosis in a country in a given year, whereas a NA value tells us we have no information on the observation at all.
+
+
 
 ```{r setup2, echo=FALSE}
 

@@ -10,6 +10,9 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 ```
 
+(I am exchange student, my written English may result not correct at times)
+
+
 ## 1
  How can you tell if an object is a tibble? 
 
