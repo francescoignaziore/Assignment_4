@@ -111,7 +111,8 @@ annoying <- rename(annoying, one = `1`, two = `2`, three = `3`)
 ##5
 What does tibble::enframe() do? When might you use it?
 
-enframe() converts named atomic vectors or lists to two-column data frames. For unnamed vectors, the natural sequence is used as name column.
+enframe() converts named atomic vectors or lists to two-column data frames. For unnamed vectors, the natural sequence is used as name column. 
+It's useful because it creates a tidy data-frame as every observation forms a row, every variable ("name" and "value"") forms a column and each type of observational unit forms a table.
 
 ```{r 4.4, echo=TRUE}
 
